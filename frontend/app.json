@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "TutorIA",
+    "slug": "tutorIA",
+    "description": "¿Necesitas ayuda para estudiar? Dejame echarte una mano",
+    "scheme": "tutor-ia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1b1018"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#1b1018"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      ["@react-native-voice/voice",
+      {
+        "microphonePermission": "Allow Voice to Text Tutorial to access the microphone",
+        "speechRecognitionPermission": "Allow Voice to Text Tutorial to securely recognize user speech"
+      }]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f3df6f3b-39c6-4b34-80db-810064cff13a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f3df6f3b-39c6-4b34-80db-810064cff13a"
+    }
+  }
+}
